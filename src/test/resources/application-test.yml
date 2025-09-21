@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:tc:postgresql:15-alpine:///demo
+    username: test
+    password: test
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/master.xml
+
+logging:
+  level:
+    root: INFO
